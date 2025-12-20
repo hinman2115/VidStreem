@@ -1,0 +1,74 @@
+/* Global reset for full-width layout */
+#root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hover effects */
+button:hover {
+    opacity: 0.9;
+}
+
+.statCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.tr:hover {
+    background: rgba(255,107,0,0.02);
+}
+
+.smallPrimary:hover,
+.smallDanger:hover {
+    transform: scale(1.05);
+}
+
+/* Scrollbar styling */
+.tableBody::-webkit-scrollbar,
+.contentScroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tableBody::-webkit-scrollbar-thumb,
+.contentScroll::-webkit-scrollbar-thumb {
+    background: rgba(255,107,0,0.3);
+    border-radius: 10px;
+}
+
+.tableBody::-webkit-scrollbar-track,
+.contentScroll::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05);
+}
+.menuItem:hover {
+    background: rgba(255,107,0,0.05);
+}
+
+.menuItemDanger:hover {
+    background: rgba(224,49,49,0.05);
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}

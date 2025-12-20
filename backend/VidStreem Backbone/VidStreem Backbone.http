@@ -1,0 +1,6 @@
+@VidStreem_Backbone_HostAddress = http://localhost:5148
+
+GET {{VidStreem_Backbone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

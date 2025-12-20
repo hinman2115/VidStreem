@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#02343F</color>
+    <color name="secondary_color">#F0EDCC</color>
+
+    <!-- Background Colors -->
+    <color name="background_color">#F0EDCC</color>
+    <color name="dark_background">#02343F</color>
+
+    <!-- Text Colors -->
+    <color name="primary_text">#02343F</color>
+    <color name="secondary_text">#02343F</color>
+    <color name="light_text">#F0EDCC</color>
+    <color name="orange_accent">#FF9248</color>
+    <color name="orange_light">#FFB38A</color>
+    <!-- Button Colors -->
+    <color name="button_primary">#02343F</color>
+    <color name="button_pressed">#01252E</color>
+    <color name="button_text">#F0EDCC</color>
+
+    <!-- Input Colors -->
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_border">#02343F</color>
+    <color name="hint_color">#02343F</color>
+
+    <!-- Social Button Colors -->
+    <color name="social_background">#FFFFFF</color>
+    <color name="social_pressed">#E8E5B8</color>
+
+    <!-- Accent Colors (variations of your main colors) -->
+    <color name="accent_light">#E8E5B8</color>
+    <color name="accent_dark">#01252E</color>
+
+    <color name="text_secondary">#999999</color>
+    <color name="text_primary">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="netflix_red">#e50914</color>
+    <color name="card_background">#2a2a2a</color>
+    <color name="overlay_background">#80000000</color>
+    <color name="button_secondary">#6d6d6d</color>
+
+    <color name="success_green">#46d369</color>
+    <color name="warning_yellow">#ffd23f</color>
+    <color name="error_red">#ff6b6b</color>
+
+    <color name="splash_background">#1976D2</color>
+
+        <!-- Material Design Base Colors -->
+        <color name="purple_200">#FFBB86FC</color>
+        <color name="purple_500">#FF6200EE</color>
+        <color name="purple_700">#FF3700B3</color>
+        <color name="teal_200">#FF03DAC5</color>
+        <color name="teal_700">#FF018786</color>
+
+
+        <!-- Gradient Theme Colors -->
+        <color name="primary">#6C63FF</color> <!-- Purple -->
+        <color name="primary_dark">#4B45B8</color>
+        <color name="primary_light">#8A84FF</color>
+
+        <color name="secondary">#FF6584</color> <!-- Pink -->
+        <color name="secondary_dark">#D94865</color>
+        <color name="secondary_light">#FF88A3</color>
+
+        <color name="accent">#00D9FF</color>
+
+        <!-- Dark Theme Backgrounds -->
+        <color name="background">#0F0F1E</color>
+        <color name="background_light">#1A1A2E</color>
+
+        <!-- Text Colors -->
+        <color name="text_tertiary">#8F8FA6</color>
+
+        <!-- Status Colors -->
+        <color name="success">#00E676</color>
+        <color name="error">#FF5252</color>
+        <color name="warning">#FFD740</color>
+        <color name="info">#40C4FF</color>
+
+        <!-- Button Colors -->
+        <color name="button_disabled">#3E3E52</color>
+
+        <!-- Overlay & Divider -->
+        <color name="overlay_dark">#CC000000</color>
+        <color name="overlay_light">#66000000</color>
+        <color name="divider">#2A2A3E</color>
+    </resources>

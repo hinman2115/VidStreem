@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Profile Header Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profile_header_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/card_margin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/card_padding">
+
+                <!-- Profile Icon -->
+                <ImageView
+                    android:id="@+id/profile_icon"
+                    android:layout_width="@dimen/profile_icon_size"
+                    android:layout_height="@dimen/profile_icon_size"
+                    android:background="@drawable/circle_background"
+                    android:padding="@dimen/icon_padding"
+                    android:src="@drawable/ic_person"
+                    app:tint="#808080"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <!-- Login Text -->
+                <TextView
+                    android:id="@+id/login_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/text_margin"
+                    android:text="Login"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="@id/profile_icon"
+                    app:layout_constraintBottom_toBottomOf="@id/profile_icon"
+                    app:layout_constraintStart_toEndOf="@id/profile_icon"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+<!--                &lt;!&ndash; VIP Section &ndash;&gt;-->
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:id="@+id/viplogo"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/section_margin"-->
+<!--                    android:background="@drawable/vip_background"-->
+<!--                    android:padding="@dimen/vip_padding"-->
+<!--                    android:visibility="visible"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/profile_icon"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/vip_title"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="VIP Center"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="@dimen/subtitle_text_size"-->
+<!--                        android:textStyle="bold"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintEnd_toStartOf="@id/btn_join_vip" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/vip_description"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="@dimen/text_small_margin"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:maxLines="2"-->
+<!--                        android:text="Watch the content in advance before..."-->
+<!--                        android:textColor="#666666"-->
+<!--                        android:textSize="@dimen/body_text_size"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/vip_title"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintEnd_toStartOf="@id/btn_join_vip" />-->
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        style="@style/Widget.Material3.Button.TonalButton"-->
+<!--                        android:id="@+id/btn_join_vip"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="@dimen/button_height"-->
+<!--                        android:minWidth="@dimen/button_min_width"-->
+<!--                        android:backgroundTint="#FFD700"-->
+<!--                        android:text="Join VIP"-->
+<!--                        android:textColor="@android:color/black"-->
+<!--                        android:textSize="@dimen/button_text_size"-->
+<!--                        app:cornerRadius="@dimen/button_corner_radius"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Redeem Free VIP Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_redeem_vip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_header_card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/reedemlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:padding="@dimen/card_padding"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/redeem_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Acsess For Vip"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/subtitle_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/btn_enter_redeem"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/redeem_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_small_margin"
+                    android:text="Enter Only If Yo Don't Have Account"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/body_text_size"
+                    app:layout_constraintEnd_toStartOf="@id/btn_enter_redeem"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/redeem_title" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_enter_redeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:backgroundTint="#FF5722"
+                    android:minWidth="@dimen/button_min_width"
+                    android:text="Enter"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="@dimen/button_corner_radius"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- History Section Header -->
+        <TextView
+            android:id="@+id/history_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="History"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/section_title_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/btn_view_all_history"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_redeem_vip" />
+
+        <ImageView
+            android:id="@+id/btn_view_all_history"
+            android:layout_width="@dimen/icon_small_size"
+            android:layout_height="@dimen/icon_small_size"
+            android:src="@drawable/ic_arrow_right"
+            app:tint="#999999"
+            app:layout_constraintTop_toTopOf="@id/history_title"
+            app:layout_constraintBottom_toBottomOf="@id/history_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- History Horizontal RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/history_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/recycler_padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/history_title" />
+
+        <!-- Menu Items Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/menu_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/history_recycler_view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingTop="@dimen/text_small_margin"
+                android:paddingBottom="@dimen/text_small_margin">
+
+                <!-- Logout -->
+                <TextView
+                    android:id="@+id/menu_download_text"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_item_height"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/subtitle_text_size"
+                    app:layout_constraintEnd_toStartOf="@id/menu_download_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/menu_download_arrow"
+                    android:layout_width="@dimen/icon_small_size"
+                    android:layout_height="@dimen/icon_small_size"
+                    android:layout_marginEnd="@dimen/card_padding"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintBottom_toBottomOf="@id/menu_download_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/menu_download_text"
+                    app:tint="#CCCCCC" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

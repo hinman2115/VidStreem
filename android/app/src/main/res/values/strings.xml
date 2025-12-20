@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Vidstreem</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_icon">Search icon</string>
+    <string name="clear_search">Clear search</string>
+    <string name="no_results">No results</string>
+
+    <!-- Toolbar -->
+    <string name="search_movies_title">Search Movies</string>
+
+    <!-- Search Hints -->
+    <string name="search_hint">Search movies, actors, genres…</string>
+
+    <!-- Empty State -->
+    <string name="empty_state_title">No results found</string>
+    <string name="empty_state_message">Try searching with different keywords</string>
+
+    <!-- Filter Chips -->
+    <string name="filter_action">Action</string>
+    <string name="filter_comedy">Comedy</string>
+    <string name="filter_drama">Drama</string>
+    <string name="filter_thriller">Thriller</string>
+    <string name="filter_horror">Horror</string>
+    <string name="filter_scifi">Sci-Fi</string>
+    <string name="filter_romance">Romance</string>
+    <string name="filter_animation">Animation</string>
+
+    <!-- Loading States -->
+    <string name="loading_results">Loading results…</string>
+    <string name="searching">Searching…</string>
+
+    <!-- Error Messages -->
+    <string name="search_error">Unable to search. Please try again.</string>
+    <string name="network_error">No internet connection</string>
+
+
+</resources>
